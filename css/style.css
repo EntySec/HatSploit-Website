@@ -32,6 +32,13 @@ Blog Pages
 /*------------------------
 Preloader Styles
 ------------------------*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .loader-wrap {
   position: fixed;
   z-index: 1000;
