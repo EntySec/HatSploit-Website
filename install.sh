@@ -114,10 +114,11 @@ else
 fi
 
 {
-    sudo python3 -m pip install setuptools
-    sudo python3 -m pip install -r deps/core_dependencies.txt
-    sudo python3 -m pip install -r deps/plugins_dependencies.txt
-    sudo python3 -m pip install -r deps/modules_dependencies.txt
+    sudo -H python3 -m pip install --upgrade pip
+    sudo -H python3 -m pip install setuptools setuptools-rust
+    sudo -H python3 -m pip install -r deps/core_dependencies.txt
+    sudo -H python3 -m pip install -r deps/modules_dependencies.txt
+    sudo -H python3 -m pip install -r deps/plugins_dependencies.txt
 } &> /dev/null
 
 if [[ ! -d /opt ]]; then
